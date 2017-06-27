@@ -111,8 +111,7 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- %{\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#1}{}}{}{{\bf #1} \hfill {#2}} % Bold company name and date on the right
+ \ifthenelse{\equal{#1}{}}{}{{\bf #1} \hfill {#2}} % Bold company name and date on the right if it exists
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \ifthenelse{\equal{#1}{}}{}{\\}
   {\em #3} \hfill {\em #4} % Italic job title and location
